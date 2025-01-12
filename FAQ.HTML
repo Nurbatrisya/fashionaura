@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - FashionAura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f6f1e1;
+            color: #6d4c41;
+            line-height: 1.6;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #e4d6b8;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            left: 30px; 
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #6d4c41;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 18px; 
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #6d4c41;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #d8bba7;
+        }
+        .faq-section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-section h1 {
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            color: #6d4c41;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #6d4c41;
+            cursor: pointer;
+            position: relative;
+        }
+        .faq-item h3:hover {
+            color: #d8bba7; 
+        }
+        .faq-item p {
+            font-size: 16px;
+            color: #6d4c41;
+            margin-top: 10px;
+            display: none; 
+        }
+        .footer {
+            background-color: #6d4c41; 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqItems = document.querySelectorAll(".faq-item h3");
+            faqItems.forEach(item => {
+                item.addEventListener("click", () => {
+                    const answer = item.nextElementSibling;
+                    answer.style.display = answer.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<div class="header">
+    <div class="logo">FashionAura</div>
+    <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="sale.html">Sale</a>
+    </div>
+</div>>
+
+
+<div class="faq-section">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <h3>What is FashionAura's return policy?</h3>
+        <p>We accept returns within 30 days of purchase, provided the items are in their original condition with all tags attached.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How long does shipping take?</h3>
+        <p>Shipping typically takes 5-7 business days for standard delivery and 2-3 business days for express delivery.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Do you offer international shipping?</h3>
+        <p>Yes, we ship to most countries worldwide. Shipping charges and times vary based on location.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Can I cancel or modify my order?</h3>
+        <p>You can cancel or modify your order within 24 hours of placing it. Contact our support team for assistance.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How do I track my order?</h3>
+        <p>Once your order has been shipped, you will receive an email with the tracking number and link to track your package.</p>
+    </div>
+	<div class="faq-item">
+    <h3>What payment methods do you accept?</h3>
+    <p>We accept major credit cards such as Visa, MasterCard, American Express, and PayPal. Additionally, we also support bank transfers and cash on delivery in selected regions.</p>
+</div>
+<div class="faq-item">
+    <h3>Are your products ethically made?</h3>
+    <p>Yes, we are committed to ethical production practices. Our products are crafted by skilled artisans under fair working conditions.</p>
+</div>
+<div class="faq-item">
+    <h3>How do I take care of my FashionAura items?</h3>
+    <p>Each item comes with specific care instructions. Generally, we recommend hand washing or using a delicate cycle with cold water and air drying.</p>
+</div>
+<div class="faq-item">
+    <h3>Do you offer gift cards?</h3>
+    <p>Yes, we offer digital gift cards in various denominations. They are perfect for any occasion and can be redeemed online.</p>
+</div>
+<div class="faq-item">
+    <h3>Can I customize or personalize my order?</h3>
+    <p>We offer limited customization options on select items. Please contact our support team for more information.</p>
+</div>
+<div class="faq-item">
+    <h3>What do I do if I receive a damaged item?</h3>
+    <p>If you receive a damaged item, please contact our customer service team within 7 days of delivery with a photo of the damage for assistance.</p>
+</div>
+<div class="faq-item">
+    <h3>Do you have a loyalty program?</h3>
+    <p>Yes, we have a loyalty program where you can earn points for every purchase, which can be redeemed for discounts on future orders.</p>
+</div>
+<div class="faq-item">
+    <h3>How do I contact customer support?</h3>
+    <p>You can reach our customer support team via email, phone, or our Contact Us form on the website. Our support hours are Monday to Friday, 9 AM - 5 PM.</p>
+</div>
+<div class="faq-item">
+    <h3>Do you offer discounts for bulk purchases?</h3>
+    <p>Yes, we offer special discounts for bulk orders. Please contact our sales team for further details and pricing.</p>
+</div>
+<div class="faq-item">
+    <h3>How do I unsubscribe from the newsletter?</h3>
+    <p>You can unsubscribe by clicking the "Unsubscribe" link at the bottom of any newsletter email you receive from us.</p>
+</div>
+
+</div>
+
+
+<div class="footer">
+    <p>&copy; 2025 FashionAura. All rights reserved.</p>
+    <p>Follow us on 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a>
+    </p>
+</div>
+
+</body>
+</html>

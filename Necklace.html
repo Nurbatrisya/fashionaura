@@ -1,0 +1,490 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FashionAura</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+background-color: #f6f1e1;
+color: #6d4c41;
+line-height: 1.6;
+}
+.promo-bar {
+background-color: #d8bba7; color: #fff;text-align: center;
+padding: 12px;
+font-size: 14px;
+font-weight: 600;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+background-color: #fff;
+border-bottom: 1px solid #e4d6b8; 
+}
+.logo {
+font-size: 28px;
+font-weight: 700;
+font-family: 'Playfair Display', serif;
+color: #6d4c41;
+}
+.nav-menu a {
+text-decoration: none;
+color: #6d4c41;
+font-weight: 600;
+margin: 0 18px;
+transition: 0.3s;
+}
+.nav-menu a:hover {
+color: #d8bba7;
+}
+.icons img {
+width: 22px;
+margin-left: 18px;
+cursor: pointer;
+}
+
+.search-container {
+width: 25%;
+padding: 20px;
+background-color: #f9f6ed;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+margin-left: 20px;
+position: sticky;
+top: 20px;
+}
+
+.search-container h2 {
+font-size: 22px;
+color: #6d4c41;
+margin-bottom: 15px;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.search-bar input {
+flex: 1;
+padding: 10px;
+border: 1px solid #d8bba7;
+border-radius: 5px;
+outline: none;
+}
+
+.search-bar button {
+padding: 10px 15px;
+background-color: #6d4c41;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.search-bar button:hover {
+background-color: #5a3b31;
+}
+
+.search-results {
+margin-top: 20px;
+}
+
+.search-results .product-card {
+display: flex;
+align-items: center;
+gap: 15px;
+background-color: #fff;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 10px;
+}
+
+.search-results .product-card img {
+width: 60px;
+height: 60px;
+border-radius: 5px;
+}
+
+.search-results .product-card h3 {
+font-size: 16px;
+color: #6d4c41;
+margin: 0;
+}
+
+.search-results .product-card .price {
+font-size: 14px;
+color: #d8bba7;
+}
+
+.dropdown-container {
+position: relative;
+display: inline-block;
+}
+.dropdown-btn {
+text-decoration: none;
+color: #6d4c41;
+font-weight: 600;
+margin: 0 18px;
+cursor: pointer;
+font-size: 16px;
+background: none;
+border: none;
+}
+.dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #fff;
+border: 1px solid #e4d6b8;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+border-radius: 5px;
+min-width: 150px;
+}
+.dropdown a {
+color: #6d4c41;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+font-weight: 400;
+}
+.dropdown a:hover {
+background-color: #f6f1e1;
+color: #d8bba7;
+}
+.dropdown-container:hover .dropdown {
+display: block;
+}
+.hero-section {
+position: relative;
+width: 100%;
+height: 80vh;
+background: url('fashion-model.jpg') no-repeat center center/cover;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #d8bba7;
+}
+.hero-text {
+background: rgba(255, 255, 255, 0.85);
+padding: 30px 40px;
+border-radius: 10px;
+}
+.hero-text h1 {
+font-size: 48px;
+font-family: 'Playfair Display', serif;
+color: #6d4c41;
+}
+.hero-text p {
+font-size: 18px;
+margin-top: 10px;
+color: #6d4c41;
+}
+
+.about-us-section {
+padding: 50px 20px;
+text-align: center;
+background-color: #fff;
+}
+.about-us-section h2 {
+font-size: 32px;
+color: #6d4c41;
+margin-bottom: 20px;
+}
+.about-us-section p {
+font-size: 18px;
+color: #6d4c41;
+margin-bottom: 30px;
+}
+.featured-section {
+padding: 40px 20px;
+text-align: center;
+background-color: #fff;
+}
+.featured-section h2 {
+font-size: 32px;
+color: #6d4c41;
+margin-bottom: 20px;
+}
+.product-cards {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 30px;
+}
+.product-card {
+width: 250px;
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: 0.3s;
+}
+.product-card:hover {
+transform: scale(1.05);
+}
+.product-card img {
+width: 100%;
+border-radius: 8px;
+}
+.product-card h3 {
+margin-top: 15px;
+font-size: 20px;
+color: #6d4c41;
+}
+.product-card p {
+margin-top: 10px;
+color: #777;
+}
+.product-card .add-to-cart {
+margin-top: 20px;
+background-color: #6d4c41;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.product-card .add-to-cart:hover {
+background-color: #d8bba7;
+}
+
+.product-card .price {
+margin-top: 15px;
+font-weight: bold;
+color: #d8bba7;
+}
+.testimonials-section {
+background-color: #d8bba7;
+padding: 40px 20px;
+text-align: center;
+color: #fff;
+}
+.testimonials-section h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+.testimonial {
+font-size: 18px;
+margin-bottom: 10px;
+}
+.testimonial .name {
+margin-top: 10px;
+font-weight: 600;
+}
+.footer {
+background-color: #6d4c41;
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+.footer a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="promo-bar">
+🌸 20% OFF All Items | Use Code: <strong>FASHION20</strong> 🌸
+</div>
+
+<div class="header">
+<div class="logo">FashionAura</div>
+<div class="nav-menu">
+<a href="index.html">Home</a>
+<div class="dropdown-container">
+<button class="dropdown-btn">New Arrivals</button>
+<div class="dropdown">
+<a href="#">Dicember 2024</a>
+<a href="#">January 2025</a>
+</div>
+</div>
+<div class="dropdown-container">
+<button class="dropdown-btn">Women</button>
+<div class="dropdown">
+<a href="#">Scarf</a>
+<a href="#">Skirt</a>
+<a href="#">Dresses</a>
+</div>
+</div>
+<div class="dropdown-container">
+<button class="dropdown-btn">Men</button>
+<div class="dropdown">
+<a href="#">Shirts</a>
+<a href="#">Trousers</a>
+<a href="#">Jackets</a>
+</div>
+</div>
+<div class="dropdown-container">
+<button class="dropdown-btn">Accessories</button>
+<div class="dropdown">
+<a href="Watch.html">Watch</a>
+<a href="Ring.html">Rings</a>
+<a href="Necklace.html">Necklace</a>
+</div>
+</div>
+<div class="dropdown-container">
+<button class="dropdown-btn">Sale</button>
+<div class="dropdown">
+<a href="#">20%</a>
+<a href="#">50%</a>
+</div>
+</div>
+</div>
+<div class="icons">
+<img src="user-icon.png" alt="User">
+<a href="Cart.html"><img src="cart-icon.png" alt="Cart"></a>
+</div>
+</div>
+
+<div class="search-container">
+<h2>Search Products</h2>
+<div class="search-bar">
+<form id="searchForm">
+<input type="text" id="searchInput" placeholder="Search...">
+<button type="submit">Search</button>
+</form>
+</div>
+<div id="searchResults" class="search-results"></div>
+</div>
+<div id="searchResults" style="padding: 20px; background-color: #fff; margin-top: 20px;"></div>
+
+<div class="product-cards">
+<div class="product-card">
+<img src="Necklace 1.png">
+<h3>Love Pendant</h3>
+<div class="price">$29.99</div>
+<button class="add-to-cart" 
+        data-name="love Pendant" 
+        data-price="$29.99" 
+        data-image="Necklace 1.png">
+  Add to Cart
+</button>
+</div>
+<div class="product-card">
+<img src="Necklace 2.png">
+<h3>Tiffany T T1 Circle Pendant</h3>
+<div class="price">$59.99</div>
+<button class="add-to-cart" 
+data-name="Tiffany T T1 Circle Pendant" 
+data-price="$59.99" 
+data-image="Neclace 2.png">
+Add to Cart
+</button>
+</div>
+<div class="product-card">
+<img src="Necklace 3.jpg">
+<h3>Tiffany 1837 interlock</h3>
+<div class="price">$39.99</div>
+<button class="add-to-cart" 
+data-name="Tiffany 1837 interlock" 
+data-price="$39.99" 
+data-image="Necklace 3.png">
+Add to Cart
+</button>
+</div>
+<div class="product-card">
+<img src="Necklace 4.jpg">
+<h3>Open Heart Pendant</h3>
+<div class="price">$89.99</div>
+<button class="add-to-cart" 
+data-name="Open Heart Pendant" 
+data-price="$89.99" 
+data-image="Necklace 4.png">
+Add to Cart
+</button>
+</div>
+<div class="product-card">
+<img src="Necklace 5.jpg"
+<h3>Letter Pendant A-Z</h3>
+<div class="price">$49.99</div>
+<button class="add-to-cart" 
+data-name="Letter Pendant A-Z" 
+data-price="$49.99" 
+data-image="Necklace 5.png">
+Add to Cart
+</button>
+</div>
+<div class="product-card">
+<img src="Necklace 6.jpg">
+<h3>Olive Leaf Pendant</h3>
+<div class="price">$34.99</div>
+<button class="add-to-cart" 
+data-name="Olive Leaf Pendant" 
+data-price="$34.99" 
+data-image="Necklace 6.png">
+Add to Cart
+</button>
+</div>
+</div>
+
+<div class="footer">
+<p>&copy; 2025 FashionAura. All rights reserved.</p>
+<p>Follow us on
+<a href="#">Instagram</a> |
+<a href="#">Facebook</a> |
+<a href="#">Twitter</a>
+</p>
+</div>
+
+<script>
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+event.preventDefault();
+const query = document.getElementById('searchInput').value.toLowerCase();
+const products = [
+{ name: 'Love Pendant', price: '$29.99', image: 'Necklace 1.png' },
+{ name: 'Tiffany T T1 Circle Pendant', price: '$59.99', image: 'Necklace 2.png' },
+{ name: 'Tiffany 1837 interlock', price: '$39.99', image: 'Necklace 3.png' },
+{ name: 'Open Heart Pendant', price: '$89.99', image: 'Necklace 4.png' },
+{ name: 'Letter Pendant', price: '$49.99', image: 'Necklace 5.png' },
+{ name: 'Olive Leaf Pendant', price: '$34.99', image: 'Necklace 6.png' }
+];
+const results = products.filter(product => product.name.toLowerCase().includes(query));
+const resultsContainer = document.getElementById('searchResults');
+resultsContainer.innerHTML = '';
+if (results.length) {
+results.forEach(result => {
+resultsContainer.innerHTML += `
+<div class="product-card">
+<img src="${result.image}" alt="${result.name}">
+<div>
+<h3>${result.name}</h3>
+<div class="price">${result.price}</div>
+</div>
+</div>
+`;
+});
+} else {
+resultsContainer.innerHTML = '<p>No results found.</p>';
+}
+});
+</script>
+</body>
+</html>
+

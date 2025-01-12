@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Arrivals - FashionAura</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background-color: #f6f1e1; 
+color: #6d4c41; 
+line-height: 1.6;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+background-color: #fff;
+border-bottom: 1px solid #e4d6b8; 
+}
+
+.logo {
+font-size: 28px;
+font-weight: 700;
+font-family: 'Playfair Display', serif;
+color: #6d4c41;
+}
+
+.search-container {
+width: 25%;
+padding: 20px;
+background-color: #f9f6ed;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+margin-left: 20px;
+position: sticky;
+top: 20px;
+}
+
+.search-container h2 {
+font-size: 22px;
+color: #6d4c41;
+margin-bottom: 15px;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.search-bar input {
+flex: 1;
+padding: 10px;
+border: 1px solid #d8bba7;
+border-radius: 5px;
+outline: none;
+}
+
+.search-bar button {
+padding: 10px 15px;
+background-color: #6d4c41;
+olor: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.search-bar button:hover {
+background-color: #5a3b31;
+}
+
+.search-results {
+margin-top: 20px;
+}
+
+.search-results .product-card {
+display: flex;
+align-items: center;
+gap: 15px;
+background-color: #fff;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 10px;
+}
+
+.search-results .product-card img {
+width: 60px;
+height: 60px;
+border-radius: 5px;
+}
+
+.search-results .product-card h3 {
+font-size: 16px;
+color: #6d4c41;
+margin: 0;
+}
+
+.search-results .product-card .price {
+font-size: 14px;
+color: #d8bba7;
+}
+
+.nav-menu a {
+text-decoration: none;
+color: #6d4c41;
+font-weight: 600;
+margin: 0 18px;
+transition: 0.3s;
+}
+
+.nav-menu a:hover {
+color: #d8bba7; 
+}
+
+.container {
+max-width: 1200px;
+margin: 50px auto;
+padding: 20px;
+}
+
+.section-title {
+text-align: center;
+font-size: 32px;
+font-family: 'Playfair Display', serif;
+color: #6d4c41;
+margin-bottom: 30px;
+}
+
+.product-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+}
+
+.product-card {
+width: 250px;
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: 0.3s;
+}
+
+.product-card:hover {
+transform: scale(1.05);
+}
+
+.product-card img {
+width: 100%;
+border-radius: 8px;
+}
+
+.product-card h3 {
+margin-top: 15px;
+font-size: 20px;
+color: #6d4c41;
+}
+
+.product-card p {
+margin-top: 10px;
+color: #777;
+}
+
+.product-card .price {
+margin-top: 15px;
+font-weight: bold;
+color: #d8bba7;
+}
+
+.footer {
+background-color: #6d4c41; 
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<div class="logo">FashionAura</div>
+<div class="nav-menu">
+ <a href="index.html">Home</a>
+ <a href="cart.html">Cart</a>
+</div>
+</div>
+
+<div class="search-container">
+ <h2>Search Products</h2>
+<div class="search-bar">
+ <form id="searchForm">
+  <input type="text" id="searchInput" placeholder="Search...">
+<button type="submit">Search</button>
+</form>
+</div>
+<div id="searchResults" class="search-results"></div>
+</div>
+<div id="searchResults" style="padding: 20px; background-color: #fff; margin-top: 20px;"></div>
+
+<div class="container">
+ <h1 class="section-title">New Arrivals December 2024</h1>
+<div class="product-grid">
+<div class="product-card">
+ <img src="new5.jpg" alt="Product 1">
+  <h3>Luxe Velvet Midi Dress</h3>
+   <p>Soft and luxurious velvet fabric</p>
+<div class="price">$89.99</div>
+</div>
+
+<div class="product-card">
+ <img src="new6.jpg" alt="Product 2">
+  <h3>Urban Explorer Cargo Jacket</h3>
+   <p>Lightweight, utility-style, multiple pockets and adjustable drawstrings.</p>
+<div class="price">$69.99</div>
+</div>
+
+<div class="product-card">
+ <img src="new7.jpg" alt="Product 3">
+  <h3>Classic Leather Tote Bag</h3>
+   <p>Zippered pockets, and minimalist design</p>
+<div class="price">$129.99</div>
+</div>
+
+<div class="product-card">
+ <img src="new8.jpg" alt="Product 4">
+  <h3>All-Season Knit Scarf</h3>
+   <p>Soft and breathable fabric.</p>
+<div class="price">$24.99</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+ <p>&copy; 2025 FashionAura. All rights reserved.</p>
+ <p>Follow us on 
+  <a href="#">Instagram</a> | 
+  <a href="#">Facebook</a> | 
+  <a href="#">Twitter</a>
+</p>
+</div>
+
+<script>
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+event.preventDefault();
+ const query = document.getElementById('searchInput').value.toLowerCase();
+ const products = [
+  { name: 'Luxe Velvet Midi Dress', price: '$89.99', image: 'new5.jpg' },
+  { name: 'Urban Explorer Cargo Jacket', price: '$69.99', image: 'new6.jpg' },
+  { name: 'Classic Leather Tote Bag', price: '$129.99', image: 'new7.jpg' },
+  { name: 'All-Season Knit Scarf', price: '$24.99', image: 'new8s.jpg' }
+];
+ const results = products.filter(product => product.name.toLowerCase().includes(query));
+ const resultsContainer = document.getElementById('searchResults');
+resultsContainer.innerHTML = '';
+ if (results.length) {
+  results.forEach(result => {
+  resultsContainer.innerHTML += `
+ <div class="product-card">
+  <img src="${result.image}" alt="${result.name}">
+<div>
+ <h3>${result.name}</h3>
+<div class="price">${result.price}</div>
+</div>
+</div>
+`;
+});
+} else {
+resultsContainer.innerHTML = '<p>No results found.</p>';
+}
+});
+</script>
+</body>
+</html>

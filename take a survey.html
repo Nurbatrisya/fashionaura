@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Survey - FashionAura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f6f1e1; 
+            color: #6d4c41; 
+            line-height: 1.6;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #e4d6b8; 
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            left: 30px;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #6d4c41;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 18px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #6d4c41;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #d8bba7; 
+        }
+        .survey-section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .survey-section h1 {
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            color: #6d4c41;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .survey-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .survey-section label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .survey-section input, 
+        .survey-section select, 
+        .survey-section textarea, 
+        .survey-section button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #e4d6b8;
+            border-radius: 5px;
+        }
+        .survey-section textarea {
+            resize: none;
+            height: 100px;
+        }
+        .survey-section button {
+            background-color: #6d4c41;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .survey-section button:hover {
+            background-color: #d8bba7;
+        }
+        .footer {
+            background-color: #6d4c41;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="header">
+    <div class="logo">FashionAura</div>
+    <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="sale.html">Sale</a>
+    </div>
+</div>
+
+
+<div class="survey-section">
+    <h1>We Value Your Feedback</h1>
+    <form action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="rating">How would you rate your experience with FashionAura?</label>
+        <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select a rating</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Share your thoughts with us"></textarea>
+
+        <label for="suggestions">Any Suggestions for Us?</label>
+        <textarea id="suggestions" name="suggestions" placeholder="We'd love to hear your ideas"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+<div class="footer">
+    <p>&copy; 2025 FashionAura. All rights reserved.</p>
+    <p>Follow us on 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a>
+    </p>
+</div>
+
+</body>
+</html>

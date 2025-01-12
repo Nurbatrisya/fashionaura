@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FashionAura - Skirts</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+background-color: #f6f1e1;
+color: #6d4c41;
+line-height: 1.6;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+background-color: #fff;
+border-bottom: 1px solid #e4d6b8;
+}
+.logo {
+font-size: 28px;
+font-weight: 700;
+font-family: 'Playfair Display', serif;
+color: #6d4c41;
+}
+
+.search-container {
+width: 25%;
+padding: 20px;
+background-color: #f9f6ed;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+margin-left: 20px;
+position: sticky;
+top: 20px;
+}
+
+.search-container h2 {
+font-size: 22px;
+color: #6d4c41;
+margin-bottom: 15px;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.search-bar input {
+flex: 1;
+padding: 10px;
+border: 1px solid #d8bba7;
+border-radius: 5px;
+outline: none;
+}
+
+.search-bar button {
+padding: 10px 15px;
+background-color: #6d4c41;
+olor: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.search-bar button:hover {
+background-color: #5a3b31;
+}
+
+.search-results {
+margin-top: 20px;
+}
+
+.search-results .product-card {
+display: flex;
+align-items: center;
+gap: 15px;
+background-color: #fff;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 10px;
+}
+
+.search-results .product-card img {
+width: 60px;
+height: 60px;
+border-radius: 5px;
+}
+
+.search-results .product-card h3 {
+font-size: 16px;
+color: #6d4c41;
+margin: 0;
+}
+
+.search-results .product-card .price {
+font-size: 14px;
+color: #d8bba7;
+}
+.nav-menu a {
+text-decoration: none;
+color: #6d4c41;
+font-weight: 600;
+margin: 0 18px;
+transition: 0.3s;
+}
+.nav-menu a:hover {
+color: #d8bba7;
+}
+.skirt-section {
+padding: 50px 20px;
+text-align: center;
+}
+.skirt-section h2 {
+font-size: 32px;
+color: #6d4c41;
+margin-bottom: 20px;
+}
+.skirt-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+margin-top: 30px;
+}
+.skirt-card {
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: 0.3s;
+}
+.skirt-card:hover {
+transform: scale(1.05);
+}
+.skirt-card img {
+width: 100%;
+border-radius: 8px;
+}
+.skirt-card h3 {
+margin-top: 15px;
+font-size: 20px;
+color: #6d4c41;
+}
+.skirt-card p {
+margin-top: 10px;
+color: #777;
+}
+.skirt-card .price {
+margin-top: 15px;
+font-weight: bold;
+color: #d8bba7;
+}
+.footer {
+background-color: #6d4c41;
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+.footer a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+<div class="logo">FashionAura</div>
+<div class="nav-menu">
+<a href="index.html">Home</a>
+<a href="cart.html">Cart</a>
+</div>
+</div>
+
+<div class="search-container">
+<h2>Search Products</h2>
+<div class="search-bar">
+<form id="searchForm">
+<input type="text" id="searchInput" placeholder="Search...">
+<button type="submit">Search</button>
+</form>
+</div>
+<div id="searchResults" class="search-results"></div>
+</div>
+<div id="searchResults" style="padding: 20px; background-color: #fff; margin-top: 20px;"></div>
+
+
+<div class="skirt-section">
+<h2>Explore Our Skirt Collection</h2>
+<div class="skirt-cards">
+<div class="skirt-card">
+<img src="a line.png" alt="A-line Skirt">
+<h3>A-line Skirt</h3>
+<p>Chic and flattering for every occasion.</p>
+<div class="price">$49.99</div>
+</div>
+<div class="skirt-card">
+<img src="maxi d.png" alt="Maxi Skirt">
+<h3>Maxi Skirt</h3>
+<p>Flowy and elegant for a relaxed style.</p>
+<div class="price">$59.99</div>
+</div>
+<div class="skirt-card">
+<img src="pencil.png" alt="Pencil Skirt">
+<h3>Pencil Skirt</h3>
+<p>Sharp and sophisticated for work or events.</p>
+<div class="price">$39.99</div>
+</div>
+<div class="skirt-card">
+<img src="pleated.png" alt="Pleated Skirt">
+<h3>Pleated Skirt</h3>
+<p>Classic pleats for a timeless look.</p>
+<div class="price">$34.99</div>
+</div>
+<div class="skirt-card">
+<img src="wrap.png" alt="Wrap Skirt">
+<h3>Wrap Skirt</h3>
+<p>Adjustable fit with a trendy wrap design.</p>
+<div class="price">$44.99</div>
+</div>
+<div class="skirt-card">
+<img src="denim.png" alt="Denim Skirt">
+<h3>Denim Skirt</h3>
+<p>Casual and versatile for everyday wear.</p>
+<div class="price">$29.99</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+<p>&copy; 2025 FashionAura. All rights reserved.</p>
+<p>Follow us on
+<a href="#">Instagram</a> |
+<a href="#">Facebook</a> |
+<a href="#">Twitter</a>
+</p>
+</div>
+<script>
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+event.preventDefault();
+const query = document.getElementById('searchInput').value.toLowerCase();
+const products = [
+{ name: 'A-line Skirt', price: '$49.99', image: 'a line.png' },
+{ name: 'Maxi Skirt', price: '$59.99', image: 'maxi.png' },
+{ name: 'Pencil Skirt', price: '$39.99', image: 'pencil.png' },
+{ name: 'Pleated Skirt', price: '$34.99', image: 'pleated.png' },
+{ name: 'Wrap Skirt', price: '$44.99', image: 'wrap.png' },
+{ name: 'Denim Skirt', price: '$29.99', image: 'denim.png' },
+];
+const results = products.filter(product => product.name.toLowerCase().includes(query));
+const resultsContainer = document.getElementById('searchResults');
+resultsContainer.innerHTML = '';
+if (results.length) {
+results.forEach(result => {
+resultsContainer.innerHTML += `
+<div class="product-card">
+<img src="${result.image}" alt="${result.name}">
+<div>
+<h3>${result.name}</h3>
+<div class="price">${result.price}</div>
+</div>
+</div>
+`;
+});
+} else {
+resultsContainer.innerHTML = '<p>No results found.</p>';
+}
+});
+</script>
+</body>
+</html>

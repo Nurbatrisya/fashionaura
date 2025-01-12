@@ -255,11 +255,6 @@ margin-top: 10px;
 color: #777;
 }
 
-.product-card p {
-margin-top: 10px;
-color: #777;
-}
-
 .product-card .price {
 margin-top: 15px;
 font-weight: bold;
@@ -301,7 +296,7 @@ text-decoration: underline;
 <body>
 
 <div class="promo-bar">
-ðŸŒ¸ 20% OFF All Items | Use Code: <strong>FASHION20</strong> ðŸŒ¸
+🌸 20% OFF All Items | Use Code: <strong>FASHION20</strong> 🌸
 </div>
 
 <div class="header">
@@ -311,7 +306,7 @@ text-decoration: underline;
 <div class="dropdown-container">
 <button class="dropdown-btn">New Arrivals</button>
 <div class="dropdown">
-<a href="newdec.html">Dicember 2024</a>
+<a href="newdec.html">December 2024</a>
 <a href="newjan.html">January 2025</a>
 </div>
 </div>
@@ -326,8 +321,8 @@ text-decoration: underline;
 <div class="dropdown-container">
 <button class="dropdown-btn">Men</button>
 <div class="dropdown">
-<a href="shirts.html">Shirts</a>
-<a href="trouers.html">Trousers</a>
+<a href="shirt.html">Shirts</a>
+<a href="trousers.html">Trousers</a>
 <a href="jackets.html">Jackets</a>
 </div>
 </div>
@@ -345,7 +340,8 @@ text-decoration: underline;
 <a href="20%.html">20%</a>
 <a href="50%.html">50%</a>
 </div>
-
+</div>
+</div>
 </div>
 
 <div class="search-container">
@@ -365,16 +361,19 @@ text-decoration: underline;
 <img src="Watch 1.png">
 <h3>Petite Amber</h3>
 <div class="price">$29.99</div>
+
 </div>
 <div class="product-card">
 <img src="Watch 2.jpg">
 <h3>Classic Sheffield</h3>
 <div class="price">$59.99</div>
+
 </div>
 <div class="product-card">
 <img src="Watch 3.jpg">
 <h3>Iconic Link</h3>
 <div class="price">$39.99</div>
+
 </div>
 <div class="product-card">
 <img src="Watch 4.jpg">
@@ -382,17 +381,18 @@ text-decoration: underline;
 <div class="price">$89.99</div>
 </div>
 <div class="product-card">
-<img src="Watch 5.jpg">
+<img src="Watch 5.jpg"
 <h3>Speedmaster</h3>
 <div class="price">$49.99</div>
+
 </div>
 <div class="product-card">
 <img src="Watch 6.jpg">
 <h3>Daytona</h3>
 <div class="price">$34.99</div>
-</div>
-</div>
 
+</div>
+</div>
 
 <div class="footer">
 <p>&copy; 2025 FashionAura. All rights reserved.</p>
@@ -404,9 +404,11 @@ event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
 { name: 'Petite Amber', price: '$29.99', image: 'Watch 1.png' },
-{ name: 'Classic Sheffield', price: '$59.99', image: 'Watch 2.png' },
-{ name: 'Iconic Link', price: '$39.99', image: 'Watch 3.png' },
-{ name: 'Classic Durham', price: '$89.99', image: 'Watch 4.png' }
+{ name: 'Classic Sheffield', price: '$59.99', image: 'Watch 2.jpg' },
+{ name: 'Iconic Link', price: '$39.99', image: 'Watch 3.jpg' },
+{ name: 'Classic Durham', price: '$89.99', image: 'Watch 4.jpg' },
+{ name: 'Speedmaster', price: '$49.99', image: 'Watch 5.jpg' },
+{ name: 'Daytona', price: '$34.99', image: 'Watch 6.jpg' }
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');
@@ -428,7 +430,6 @@ resultsContainer.innerHTML = '<p>No results found.</p>';
 }
 });
 </script>
-
 </body>
 </html>
 

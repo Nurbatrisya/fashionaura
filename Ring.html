@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,12 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 body {
-background-color: #f6f1e1; 
-color: #6d4c41; 
+background-color: #f6f1e1;
+color: #6d4c41;
 line-height: 1.6;
 }
 .promo-bar {
-background-color: #d8bba7; 
-color: #fff;
-text-align: center;
+background-color: #d8bba7; color: #fff;text-align: center;
 padding: 12px;
 font-size: 14px;
 font-weight: 600;
@@ -46,7 +44,7 @@ margin: 0 18px;
 transition: 0.3s;
 }
 .nav-menu a:hover {
-color: #d8bba7; 
+color: #d8bba7;
 }
 .icons img {
 width: 22px;
@@ -152,7 +150,7 @@ position: absolute;
 top: 100%;
 left: 0;
 background-color: #fff;
-border: 1px solid #e4d6b8; 
+border: 1px solid #e4d6b8;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 z-index: 1000;
 border-radius: 5px;
@@ -166,7 +164,7 @@ display: block;
 font-weight: 400;
 }
 .dropdown a:hover {
-background-color: #f6f1e1; 
+background-color: #f6f1e1;
 color: #d8bba7;
 }
 .dropdown-container:hover .dropdown {
@@ -181,7 +179,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background-color: #d8bba7; 
+background-color: #d8bba7;
 }
 .hero-text {
 background: rgba(255, 255, 255, 0.85);
@@ -260,7 +258,7 @@ color: #777;
 .product-card .price {
 margin-top: 15px;
 font-weight: bold;
-color: #d8bba7; 
+color: #d8bba7;
 }
 .testimonials-section {
 background-color: #d8bba7;
@@ -281,7 +279,7 @@ margin-top: 10px;
 font-weight: 600;
 }
 .footer {
-background-color: #6d4c41; 
+background-color: #6d4c41;
 color: white;
 padding: 40px 20px;
 text-align: center;
@@ -298,7 +296,7 @@ text-decoration: underline;
 <body>
 
 <div class="promo-bar">
-ðŸŒ¸ 20% OFF All Items | Use Code: <strong>FASHION20</strong> ðŸŒ¸
+🌸 20% OFF All Items | Use Code: <strong>FASHION20</strong> 🌸
 </div>
 
 <div class="header">
@@ -323,7 +321,7 @@ text-decoration: underline;
 <div class="dropdown-container">
 <button class="dropdown-btn">Men</button>
 <div class="dropdown">
-<a href="shirts.html">Shirts</a>
+<a href="shirt.html">Shirts</a>
 <a href="trousers.html">Trousers</a>
 <a href="jackets.html">Jackets</a>
 </div>
@@ -341,6 +339,7 @@ text-decoration: underline;
 <div class="dropdown">
 <a href="20%.html">20%</a>
 <a href="50%.html">50%</a>
+</div>
 </div>
 </div>
 </div>
@@ -362,6 +361,7 @@ text-decoration: underline;
 <img src="Ring 1.jpg">
 <h3>Tiffany T Wire Ring</h3>
 <div class="price">$29.99</div>
+
 </div>
 <div class="product-card">
 <img src="Ring 2.jpg">
@@ -373,6 +373,7 @@ text-decoration: underline;
 <img src="Ring 3.jpg">
 <h3>Paloma Picasso</h3>
 <div class="price">$39.99</div>
+
 </div>
 <div class="product-card">
 <img src="Ring 4.jpg">
@@ -380,17 +381,18 @@ text-decoration: underline;
 <div class="price">$89.99</div>
 </div>
 <div class="product-card">
-<img src="Ring 5.png">
+<img src="Ring 5.png"
 <h3>Paloma Grafitti LOVE</h3>
 <div class="price">$49.99</div>
+
 </div>
 <div class="product-card">
 <img src="Ring 6.jpg">
-<h3>Tiffany Soleste V Band</h3>
+<h3>Tiffany Solest V Band</h3>
 <div class="price">$34.99</div>
-</div>
-</div>
 
+</div>
+</div>
 
 <div class="footer">
 <p>&copy; 2025 FashionAura. All rights reserved.</p>
@@ -406,7 +408,7 @@ const products = [
 { name: 'Paloma Picasso', price: '$39.99', image: 'Ring 3.jpg' },
 { name: 'Tiffany Victoria', price: '$89.99', image: 'Ring 4.jpg' },
 { name: 'Paloma Grafitti LOVE', price: '$49.99', image: 'Ring 5.png' },
-{ name: 'Tiffany Soleste V Band', price: '$34.99', image: 'Ring 6.jpg' },
+{ name: 'Tiffany Solest V Band', price: '$34.99', image: 'Ring 6.jpg' }
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');

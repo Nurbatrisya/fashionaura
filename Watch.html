@@ -412,9 +412,11 @@ event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
 { name: 'Petite Amber', price: '$29.99', image: 'Watch 1.png' },
-{ name: 'Classic Sheffield', price: '$59.99', image: 'Watch 2.png' },
-{ name: 'Iconic Link', price: '$39.99', image: 'Watch 3.png' },
-{ name: 'Classic Durham', price: '$89.99', image: 'Watch 4.png' }
+{ name: 'Classic Sheffield', price: '$59.99', image: 'Watch 2.jpg' },
+{ name: 'Iconic Link', price: '$39.99', image: 'Watch 3.jpg' },
+{ name: 'Classic Durham', price: '$89.99', image: 'Watch 4.jpg' },
+{ name: 'Speedmaster', price: '$49.99', image: 'Watch 5.jpg' },
+{ name: 'Daytona', price: '$34.99', image: 'Watch 6.jpg' },
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');

@@ -207,37 +207,37 @@ text-decoration: underline;
 <img src="a line.png" alt="A-line Skirt">
 <h3>A-line Skirt</h3>
 <p>Chic and flattering for every occasion.</p>
-<div class="price">$49.99</div>
+<div class="price">RM49.99</div>
 </div>
 <div class="skirt-card">
 <img src="maxi d.png" alt="Maxi Skirt">
 <h3>Maxi Skirt</h3>
 <p>Flowy and elegant for a relaxed style.</p>
-<div class="price">$59.99</div>
+<div class="price">RM59.99</div>
 </div>
 <div class="skirt-card">
 <img src="pencil.png" alt="Pencil Skirt">
 <h3>Pencil Skirt</h3>
 <p>Sharp and sophisticated for work or events.</p>
-<div class="price">$39.99</div>
+<div class="price">RM39.99</div>
 </div>
 <div class="skirt-card">
 <img src="pleated.png" alt="Pleated Skirt">
 <h3>Pleated Skirt</h3>
 <p>Classic pleats for a timeless look.</p>
-<div class="price">$34.99</div>
+<div class="price">RM34.99</div>
 </div>
 <div class="skirt-card">
 <img src="wrap.png" alt="Wrap Skirt">
 <h3>Wrap Skirt</h3>
 <p>Adjustable fit with a trendy wrap design.</p>
-<div class="price">$44.99</div>
+<div class="price">RM44.99</div>
 </div>
 <div class="skirt-card">
 <img src="denim.png" alt="Denim Skirt">
 <h3>Denim Skirt</h3>
 <p>Casual and versatile for everyday wear.</p>
-<div class="price">$29.99</div>
+<div class="price">RM29.99</div>
 </div>
 </div>
 </div>
@@ -256,12 +256,12 @@ document.getElementById('searchForm').addEventListener('submit', function (event
 event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
-{ name: 'A-line Skirt', price: '$49.99', image: 'a line.png' },
-{ name: 'Maxi Skirt', price: '$59.99', image: 'maxi.png' },
-{ name: 'Pencil Skirt', price: '$39.99', image: 'pencil.png' },
-{ name: 'Pleated Skirt', price: '$34.99', image: 'pleated.png' },
-{ name: 'Wrap Skirt', price: '$44.99', image: 'wrap.png' },
-{ name: 'Denim Skirt', price: '$29.99', image: 'denim.png' },
+{ name: 'A-line Skirt', price: 'RM49.99', image: 'a line.png' },
+{ name: 'Maxi Skirt', price: 'RM59.99', image: 'maxi.png' },
+{ name: 'Pencil Skirt', price: 'RM39.99', image: 'pencil.png' },
+{ name: 'Pleated Skirt', price: 'RM34.99', image: 'pleated.png' },
+{ name: 'Wrap Skirt', price: 'RM44.99', image: 'wrap.png' },
+{ name: 'Denim Skirt', price: 'RM29.99', image: 'denim.png' },
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');

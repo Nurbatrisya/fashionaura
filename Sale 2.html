@@ -206,17 +206,17 @@ text-decoration: underline;
 <div class="dress-card">
 <img src="sale 4.png" alt="Watch">
 <h3>Watch</h3>
-<div class="price">Now $25.99</div>
+<div class="price">Now RM25.99</div>
 </div>
 <div class="dress-card">
 <img src="sale 5.png" alt="Scarf">
 <h3>Scarf</h3>
-<div class="price">Now $15.99</div>
+<div class="price">Now RM15.99</div>
 </div>
 <div class="dress-card">
 <img src="sale 6.png" alt="Trousers">
 <h3>Trousers</h3>
-<div class="price">Now $20.99</div>
+<div class="price">Now RM20.99</div>
 </div>
 </div>
 </div>
@@ -235,9 +235,9 @@ document.getElementById('searchForm').addEventListener('submit', function (event
 event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
-{ name: 'Watch', price: '$25.99', image: 'sale 4.png' },
-{ name: 'Scarf', price: '$15.99', image: 'sale 5.png' },
-{ name: 'Trousers', price: '$20.99', image: 'sale 6.png' },
+{ name: 'Watch', price: 'RM25.99', image: 'sale 4.png' },
+{ name: 'Scarf', price: 'RM15.99', image: 'sale 5.png' },
+{ name: 'Trousers', price: 'RM20.99', image: 'sale 6.png' },
 
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));

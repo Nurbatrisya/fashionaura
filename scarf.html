@@ -207,37 +207,37 @@ text-decoration: underline;
 <img src="silk.png" alt="Silk Scarf">
 <h3>Silk Scarf</h3>
 <p>Elegant and smooth for a luxurious touch.</p>
-<div class="price">$39.99</div>
+<div class="price">RM39.99</div>
 </div>
 <div class="scarf-card">
 <img src="pashmina.png" alt="Pashmina Scarf">
 <h3>Pashmina Scarf</h3>
 <p>Perfect for adding a splash of color.</p>
-<div class="price">$29.99</div>
+<div class="price">RM29.99</div>
 </div>
 <div class="scarf-card">
 <img src="sulam.png" alt="Sulam Scarf">
 <h3>Sulam Scarf</h3>
 <p>Beautiful.</p>
-<div class="price">$24.99</div>
+<div class="price">RM24.99</div>
 </div>
 <div class="scarf-card">
 <img src="floral.png" alt="Floral Scarf">
 <h3>Floral Scarf</h3>
 <p>Soft and feminine floral patterns.</p>
-<div class="price">$34.99</div>
+<div class="price">RM34.99</div>
 </div>
 <div class="scarf-card">
 <img src="arab cotton.png" alt="Arab Cotton Scarf">
 <h3>Arab Cotton Scarf</h3>
 <p>Simple and breathable for daily wear.</p>
-<div class="price">$19.99</div>
+<div class="price">RM19.99</div>
 </div>
 <div class="scarf-card">
 <img src="chiffon.png" alt="Chiffon Scarf">
 <h3>Chiffon Scarf</h3>
 <p>Lightweight and flowy for a breezy look.</p>
-<div class="price">$29.99</div>
+<div class="price">RM29.99</div>
 </div>
 </div>
 </div>
@@ -257,12 +257,12 @@ document.getElementById('searchForm').addEventListener('submit', function (event
 event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
-{ name: 'Silk Scarf', price: '$39.99', image: 'silk.png' },
-{ name: 'Pashmina Scarf', price: '$29.99', image: 'pashmina.png' },
-{ name: 'Sulam Scarf', price: '$24.99', image: 'sulam.png' },
-{ name: 'Floral Scarf', price: '$34.99', image: 'floral.png' },
-{ name: 'Arab Cotton Scarf', price: '$19.99', image: 'arab cotton.png' },
-{ name: 'Chiffon Scarf', price: '$29.99', image: 'chiffon.png' },
+{ name: 'Silk Scarf', price: 'RM39.99', image: 'silk.png' },
+{ name: 'Pashmina Scarf', price: 'RM29.99', image: 'pashmina.png' },
+{ name: 'Sulam Scarf', price: 'RM24.99', image: 'sulam.png' },
+{ name: 'Floral Scarf', price: 'RM34.99', image: 'floral.png' },
+{ name: 'Arab Cotton Scarf', price: 'RM19.99', image: 'arab cotton.png' },
+{ name: 'Chiffon Scarf', price: 'RM29.99', image: 'chiffon.png' },
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');

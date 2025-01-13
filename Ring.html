@@ -360,36 +360,36 @@ text-decoration: underline;
 <div class="product-card">
 <img src="Ring 1.jpg">
 <h3>Tiffany T Wire Ring</h3>
-<div class="price">$29.99</div>
+<div class="price">RM29.99</div>
 
 </div>
 <div class="product-card">
 <img src="Ring 2.jpg">
 <h3>Tiffany Harmony</h3>
-<div class="price">$59.99</div>
+<div class="price">RM59.99</div>
 
 </div>
 <div class="product-card">
 <img src="Ring 3.jpg">
 <h3>Paloma Picasso</h3>
-<div class="price">$39.99</div>
+<div class="price">RM39.99</div>
 
 </div>
 <div class="product-card">
 <img src="Ring 4.jpg">
 <h3>Tiffany Victoria</h3>
-<div class="price">$89.99</div>
+<div class="price">RM89.99</div>
 </div>
 <div class="product-card">
 <img src="Ring 5.png"
 <h3>Paloma Grafitti LOVE</h3>
-<div class="price">$49.99</div>
+<div class="price">RM49.99</div>
 
 </div>
 <div class="product-card">
 <img src="Ring 6.jpg">
 <h3>Tiffany Solest V Band</h3>
-<div class="price">$34.99</div>
+<div class="price">RM34.99</div>
 
 </div>
 </div>
@@ -403,12 +403,12 @@ document.getElementById('searchForm').addEventListener('submit', function (event
 event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
-{ name: 'Tiffany T Wire Ring', price: '$29.99', image: 'Ring 1.jpg' },
-{ name: 'Tiffany Harmony', price: '$59.99', image: 'Ring 2.jpg' },
-{ name: 'Paloma Picasso', price: '$39.99', image: 'Ring 3.jpg' },
-{ name: 'Tiffany Victoria', price: '$89.99', image: 'Ring 4.jpg' },
-{ name: 'Paloma Grafitti LOVE', price: '$49.99', image: 'Ring 5.png' },
-{ name: 'Tiffany Solest V Band', price: '$34.99', image: 'Ring 6.jpg' }
+{ name: 'Tiffany T Wire Ring', price: 'RM29.99', image: 'Ring 1.jpg' },
+{ name: 'Tiffany Harmony', price: 'RM59.99', image: 'Ring 2.jpg' },
+{ name: 'Paloma Picasso', price: 'RM39.99', image: 'Ring 3.jpg' },
+{ name: 'Tiffany Victoria', price: 'RM89.99', image: 'Ring 4.jpg' },
+{ name: 'Paloma Grafitti LOVE', price: 'RM49.99', image: 'Ring 5.png' },
+{ name: 'Tiffany Solest V Band', price: 'RM34.99', image: 'Ring 6.jpg' }
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');

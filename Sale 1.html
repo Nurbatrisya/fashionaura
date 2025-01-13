@@ -202,17 +202,17 @@ text-decoration: underline;
 <div class="dress-card">
 <img src="sale 1.png" alt="Dress">
 <h3>Dress</h3>
-<div class="price">Now $20.99</div>
+<div class="price">Now RM20.99</div>
 </div>
 <div class="dress-card">
 <img src="sale 2.png" alt="Dress">
 <h3>Dress</h3>
-<div class="price">Now $25.99</div>
+<div class="price">Now RM25.99</div>
 </div>
 <div class="dress-card">
 <img src="sale 3.png" alt="Skirt">
 <h3>Skirt</h3>
-<div class="price">Now $15.99</div>
+<div class="price">Now RM15.99</div>
 </div>
 </div>
 </div>
@@ -231,9 +231,9 @@ document.getElementById('searchForm').addEventListener('submit', function (event
 event.preventDefault();
 const query = document.getElementById('searchInput').value.toLowerCase();
 const products = [
-{ name: 'Dress', price: '$20.99', image: 'sale 1.png' },
-{ name: 'Dress', price: '$25.99', image: 'sale 2.png' },
-{ name: 'Skirt', price: '$15.99', image: 'sale 3.png' },
+{ name: 'Dress', price: 'RM20.99', image: 'sale 1.png' },
+{ name: 'Dress', price: 'RM25.99', image: 'sale 2.png' },
+{ name: 'Skirt', price: 'RM15.99', image: 'sale 3.png' },
 ];
 const results = products.filter(product => product.name.toLowerCase().includes(query));
 const resultsContainer = document.getElementById('searchResults');
